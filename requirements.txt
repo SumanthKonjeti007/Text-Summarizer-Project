@@ -1,0 +1,23 @@
+transformers #using "hugging face" api, we use transformers to achive this.
+transformers[sentencepiece]
+datasets
+sacrebleu #Evolution metrics, if you are doing Text Summarization there is one matrix called row matrix. To use row matrix we need this.
+rouge_score 
+py7zr
+pandas
+nltk
+tqdm
+PyYAML
+matplotlib
+torch
+notebook
+boto3
+mypy-boto3-s3
+python-box==6.0.2
+ensure==1.0.2
+fastapi==0.78.0
+uvicorn==0.18.3
+Jinja2==3.1.2
+-e .
+
+# -e . will actually install your setup.py file, where in setup.py we write the logic for local package installation code 
