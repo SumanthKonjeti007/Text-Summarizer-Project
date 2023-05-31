@@ -1,0 +1,21 @@
+# """ Creates an artifact folder for all the generated artifacts by components are stored here. The"""
+# artifacts_root: artifacts
+
+# #Creation of configuration for data_ingestion
+# data_ingestion:
+#   root_dir: artifacts/data_ingestion
+#   #gets the dataset from the below URL
+#   source_URL: https://github.com/SumanthKonjeti007/DataSets/raw/main/summarizer-data.zip
+#   #Saves at the below location in local as data.zip
+#   local_data_file: artifacts/data_ingestion/data.zip
+#   #When unzipping the data, it stores at below location
+#   unzip_dir: artifacts/data_ingestion
+
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
