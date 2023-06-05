@@ -87,10 +87,10 @@ jobs:
       - name: Pull latest images
         run: |
          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
-         
-      # - name: Stop and remove container if running
-      #   run: |
-      #    docker ps -q --filter "name=texts" | grep -q . && docker stop texts && docker rm -fv texts
+    #need to comment the below three only for first excution of new ec2 bucket, for every next iteration we can uncomment.     
+      - name: Stop and remove container if running
+        run: |
+         docker ps -q --filter "name=texts" | grep -q . && docker stop texts && docker rm -fv texts
        
       - name: Run Docker Image to serve users
         run: |
